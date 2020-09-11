@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/bbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        <RelativeLayout
+
+
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_gravity="center"
+                android:textSize="@dimen/fontkubwa"
+                android:layout_centerInParent="true"
+                android:text="LEADERBOAD"
+                android:textStyle="bold"
+                android:textColor="@color/colorwhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginRight="7dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/submit"
+                android:layout_weight="1"
+                android:background="@drawable/roundcardnn"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:textSize="@dimen/fontsize"
+                android:text="Submit"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="100dp"
+                android:layout_height="25dp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+
+            android:layout_marginTop="5dp"
+            android:id="@+id/tabs"
+            app:tabTextColor="@color/colorgrey"
+            android:outlineSpotShadowColor="@color/colorPrimary"
+            app:tabSelectedTextColor="@color/colorwhite"
+            app:tabIndicatorColor="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"/>
+
+        <androidx.viewpager.widget.ViewPager
+
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

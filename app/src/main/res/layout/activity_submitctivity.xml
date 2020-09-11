@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/bbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Submitctivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        <RelativeLayout
+
+
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:id="@+id/learningbq"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/gads" />
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/lnjj"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/txt_hourl"
+            android:text="Project Submission"
+            android:textSize="@dimen/fontkubwa"
+            android:textColor="@color/colotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_below="@+id/txt_hourl"
+           android:layout_marginBottom="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:textColor="@color/colotext"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/lnjj"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+
+                android:padding="8dp"
+                android:background="@drawable/roundcardnnt"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:id="@+id/firsttname"
+                android:hint="First name"
+                android:textSize="@dimen/fontsize"
+                android:textColor="@color/colorgrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:padding="8dp"
+                android:background="@drawable/roundcardnnt"
+                android:hint="Last Name"
+                android:layout_weight="1"
+                android:id="@+id/lname"
+                android:textSize="@dimen/fontsize"
+                android:textColor="@color/colorgrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:background="@drawable/roundcardnnt"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:id="@+id/email"
+            android:hint="Email Address"
+            android:textSize="@dimen/fontsize"
+            android:textColor="@color/colorgrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:background="@drawable/roundcardnnt"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:id="@+id/linkgithub"
+            android:hint="Project on Github(link)"
+            android:textSize="@dimen/fontsize"
+            android:textColor="@color/colorgrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+           android:layout_marginTop="39dp"
+            android:layout_width="150dp"
+            android:layout_height="36dp"
+            android:id="@+id/submitbtnh"
+            android:background="@drawable/round_btn"
+            android:layout_gravity="center_horizontal"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:text="SUBMIT  "
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/fontndogo"
+            android:textStyle="bold" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+x</RelativeLayout>

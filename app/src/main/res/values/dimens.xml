@@ -1,0 +1,10 @@
+<resources>
+
+    <dimen name="fontsize">13sp</dimen>
+    <dimen name="fontndogo">12sp</dimen>
+    <dimen name="fontitem">20sp</dimen>
+    <dimen name="fontmin">12sp</dimen>
+    <dimen name="fontkubwa">18sp</dimen>
+
+
+</resources>
